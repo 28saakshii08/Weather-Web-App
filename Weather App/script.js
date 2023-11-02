@@ -22,11 +22,9 @@ window.addEventListener('load', () => {
 
           const fahrenheit = (temp * 9) / 5 + 32;
 
-          // Interacting with DOM to show data
           loc.textContent = `${place}`;
            desc.textContent = `${description}`;
           tempC.textContent = `${temp.toFixed(2)} °C`;
-          //  tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
           if(desc.textContent=='clear'){
             document.body.style.backgroundImage= "url('Clear1.jpg')";
         }else if(desc.textContent=='clouds'){
@@ -87,7 +85,6 @@ WeatherType.innerText = `${weather.weather[0].main}`;
 
 let date = document.getElementById('date');
 let todayDate = new Date();
-//console.log(todayDate);
 date.innerText = dateManage(todayDate);
 
 if(WeatherType.textContent == 'Clear') {
